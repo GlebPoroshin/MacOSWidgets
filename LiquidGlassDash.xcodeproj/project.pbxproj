@@ -1,0 +1,972 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+	129B60DE44B04677A7C8F76D /* LiquidGlassDashApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0EA888F33E4F0EABA2D253 /* LiquidGlassDashApp.swift */; };
+	D69EE9C2D7CB4652BEAAD800 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3651BDB90D3748A691EFA7E1 /* DashboardView.swift */; };
+	E46DAE1C5B464626817ED6BF /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8E9734B9044834A43B4E96 /* DashboardViewModel.swift */; };
+	3744E632302649F6AC8542F8 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9E6D0FD2104A88ACBC7EF0 /* Components.swift */; };
+	CF1FBB4371904BF4BB38A3CB /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C14D7C4854C43B8B822A8D5 /* AppConstants.swift */; };
+	041CE3DA15DE4993A8F519C8 /* StatsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6ADFA87E1934CA79D36A0C0 /* StatsWidget.swift */; };
+	8CA2419E72DC41D387B5A4B9 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C14D7C4854C43B8B822A8D5 /* AppConstants.swift */; };
+	AAC99C3B0658436AA4A00BEC /* StatsIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10989D0F998348629A3C2016 /* StatsIntents.swift */; };
+	3171D4410F1C4409A34F5804 /* DisplaysWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0607895B434FDA8658BAF0 /* DisplaysWidget.swift */; };
+	58332A2F461F48A69030C9F2 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C14D7C4854C43B8B822A8D5 /* AppConstants.swift */; };
+	AED36EAEB27847C9B0806B82 /* DisplaysIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31249F4C485B45F0A6F7D9EF /* DisplaysIntents.swift */; };
+	46E9FC419A8A46598633236E /* SamplerAgentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F46A1B59EB469588DF533A /* SamplerAgentApp.swift */; };
+	6403EC8F16984ABEB8C50F00 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C14D7C4854C43B8B822A8D5 /* AppConstants.swift */; };
+	F1D17BFF009645738C92DC93 /* LiquidGlassDashStatsWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7538CAC822A94378A577EBF6 /* LiquidGlassDashStatsWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+	5750C544FA3F418584E36626 /* LiquidGlassDashDisplaysWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AB9DA18EBB314271BF14D513 /* LiquidGlassDashDisplaysWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+	173F7F2590514595A0157241 /* SamplerAgent.app in Embed Login Items */ = {isa = PBXBuildFile; fileRef = 86B912C0E0C14FA4850F76DA /* SamplerAgent.app */; };
+	B4A4A43AD5274EAA8C2E256F /* CoreStats in Frameworks */ = {isa = PBXBuildFile; productRef = 3E9C7881710A4CFA8D593923 /* CoreStats */; };
+	A6C0420FAEF143A187D0695A /* DisplaysKit in Frameworks */ = {isa = PBXBuildFile; productRef = A80EDBB51A3D4C438399132F /* DisplaysKit */; };
+	FB4DABFFAD1743CF97903E10 /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 76E1DA2738E044AABB1F274D /* DesignSystem */; };
+	88F4E9141B864776AEDCBBF8 /* CoreStats in Frameworks */ = {isa = PBXBuildFile; productRef = 77D062098DC0481FBD283C88 /* CoreStats */; };
+	F60CA3A000D844E0A9ADAA5C /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = BAEBC9C0DC354C64AD58BD8A /* DesignSystem */; };
+	665ECE5596D64FB6BCAA39AF /* DisplaysKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1AA11BD7A8244B969458D9FC /* DisplaysKit */; };
+	14C385B11F3E41BBA27DE7E7 /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 8F65F1D7E37B4F7E9D8B99E5 /* DesignSystem */; };
+	363D76BB9393469BA9BE798A /* CoreStats in Frameworks */ = {isa = PBXBuildFile; productRef = F00767C963F84D2991AC50DC /* CoreStats */; };
+	EE4B9CEA7C9C4971AD8801B9 /* DisplaysKit in Frameworks */ = {isa = PBXBuildFile; productRef = EA5A8AF7435742DA88ACED54 /* DisplaysKit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+	3A4D3A1B1C7F42A0AF9E1DF8 /* PBXContainerItemProxy */ = {
+		isa = PBXContainerItemProxy;
+		containerPortal = 2FDB5EE302324480BA7E51BD /* Project object */;
+		proxyType = 1;
+		remoteGlobalIDString = B13285F45CBD479F9E9BDE58;
+		remoteInfo = LiquidGlassDashStatsWidget;
+	};
+	1284A2E56C9A423EA72252B0 /* PBXContainerItemProxy */ = {
+		isa = PBXContainerItemProxy;
+		containerPortal = 2FDB5EE302324480BA7E51BD /* Project object */;
+		proxyType = 1;
+		remoteGlobalIDString = B4C241C2750046E5A7E48E47;
+		remoteInfo = LiquidGlassDashDisplaysWidget;
+	};
+	43128D99505F4984A9D9D005 /* PBXContainerItemProxy */ = {
+		isa = PBXContainerItemProxy;
+		containerPortal = 2FDB5EE302324480BA7E51BD /* Project object */;
+		proxyType = 1;
+		remoteGlobalIDString = B1662C794F1B44F9B6DE604E;
+		remoteInfo = SamplerAgent;
+	};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+	A6CCB2CB49E54F9E83A6DBC7 /* Embed App Extensions */ = {
+		isa = PBXCopyFilesBuildPhase;
+		buildActionMask = 2147483647;
+		dstPath = "";
+		dstSubfolderSpec = 13;
+		files = (
+			F1D17BFF009645738C92DC93 /* LiquidGlassDashStatsWidget.appex in Embed App Extensions */,
+			5750C544FA3F418584E36626 /* LiquidGlassDashDisplaysWidget.appex in Embed App Extensions */,
+		);
+		name = "Embed App Extensions";
+		runOnlyForDeploymentPostprocessing = 0;
+	};
+	66E978B2E9844EA6BC4ADD27 /* Embed Login Items */ = {
+		isa = PBXCopyFilesBuildPhase;
+		buildActionMask = 2147483647;
+		dstPath = "Contents/Library/LoginItems";
+		dstSubfolderSpec = 0;
+		files = (
+			173F7F2590514595A0157241 /* SamplerAgent.app in Embed Login Items */,
+		);
+		name = "Embed Login Items";
+		runOnlyForDeploymentPostprocessing = 0;
+	};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+	3522344D044743CB89224B05 /* LiquidGlassDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiquidGlassDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+	7538CAC822A94378A577EBF6 /* LiquidGlassDashStatsWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LiquidGlassDashStatsWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+	AB9DA18EBB314271BF14D513 /* LiquidGlassDashDisplaysWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LiquidGlassDashDisplaysWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+	86B912C0E0C14FA4850F76DA /* SamplerAgent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SamplerAgent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+	AD0EA888F33E4F0EABA2D253 /* LiquidGlassDashApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlassDashApp.swift; sourceTree = "<group>"; };
+	3651BDB90D3748A691EFA7E1 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+	0F8E9734B9044834A43B4E96 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+	CD9E6D0FD2104A88ACBC7EF0 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+	09AA77974BF841CD8E2CC2AB /* LiquidGlassDash.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LiquidGlassDash.entitlements; sourceTree = "<group>"; };
+	B6ADFA87E1934CA79D36A0C0 /* StatsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsWidget.swift; sourceTree = "<group>"; };
+	7C6CAB22204C40A395693E4B /* StatsWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StatsWidget.entitlements; sourceTree = "<group>"; };
+	3D0607895B434FDA8658BAF0 /* DisplaysWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaysWidget.swift; sourceTree = "<group>"; };
+	1FC31CDAA446494499AFCEFF /* DisplaysWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DisplaysWidget.entitlements; sourceTree = "<group>"; };
+	26F46A1B59EB469588DF533A /* SamplerAgentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplerAgentApp.swift; sourceTree = "<group>"; };
+	80CB758A19DF40A3B1C6FA37 /* SamplerAgent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SamplerAgent.entitlements; sourceTree = "<group>"; };
+	8C14D7C4854C43B8B822A8D5 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+	10989D0F998348629A3C2016 /* StatsIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsIntents.swift; sourceTree = "<group>"; };
+	31249F4C485B45F0A6F7D9EF /* DisplaysIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaysIntents.swift; sourceTree = "<group>"; };
+	DE22A711E03E4F6B8B9C1404 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+	6CFA5970915D44878E93B079 /* Frameworks */ = {
+		isa = PBXFrameworksBuildPhase;
+		buildActionMask = 2147483647;
+		files = (
+			B4A4A43AD5274EAA8C2E256F /* CoreStats in Frameworks */,
+			A6C0420FAEF143A187D0695A /* DisplaysKit in Frameworks */,
+			FB4DABFFAD1743CF97903E10 /* DesignSystem in Frameworks */,
+		);
+		runOnlyForDeploymentPostprocessing = 0;
+	};
+	7D37FEDD59C345E1A36D0E41 /* Frameworks */ = {
+		isa = PBXFrameworksBuildPhase;
+		buildActionMask = 2147483647;
+		files = (
+			88F4E9141B864776AEDCBBF8 /* CoreStats in Frameworks */,
+			F60CA3A000D844E0A9ADAA5C /* DesignSystem in Frameworks */,
+		);
+		runOnlyForDeploymentPostprocessing = 0;
+	};
+	2878F667CACC4A1B81B7D19A /* Frameworks */ = {
+		isa = PBXFrameworksBuildPhase;
+		buildActionMask = 2147483647;
+		files = (
+			665ECE5596D64FB6BCAA39AF /* DisplaysKit in Frameworks */,
+			14C385B11F3E41BBA27DE7E7 /* DesignSystem in Frameworks */,
+		);
+		runOnlyForDeploymentPostprocessing = 0;
+	};
+	40A0A1CA69BC4CC9B6BEA8E2 /* Frameworks */ = {
+		isa = PBXFrameworksBuildPhase;
+		buildActionMask = 2147483647;
+		files = (
+			363D76BB9393469BA9BE798A /* CoreStats in Frameworks */,
+			EE4B9CEA7C9C4971AD8801B9 /* DisplaysKit in Frameworks */,
+		);
+		runOnlyForDeploymentPostprocessing = 0;
+	};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+	6E1076C9DC80448C9D48AD91 = {
+		isa = PBXGroup;
+		children = (
+			DE22A711E03E4F6B8B9C1404 /* Package.swift */,
+			D0A5A0C8FBB5438FA2C91EBF /* Packages */,
+			1954BE4AF64E4748BFED2587 /* LiquidGlassDashApp */,
+			21DEB1DD035B43E682D8EABF /* Widgets */,
+			DB6400ED40304B2CBF9CC3D2 /* SamplerAgent */,
+			1858C14B0B294EB7B320A6EE /* Shared */,
+			86E2623C25524113AD61C322 /* Tests */,
+			E3970862100243209F22E672 /* Products */,
+		);
+		sourceTree = "<group>";
+	};
+	1954BE4AF64E4748BFED2587 /* LiquidGlassDashApp */ = {
+		isa = PBXGroup;
+		children = (
+			105C673BDE2F4A729C9CE482 /* Sources */,
+			09AA77974BF841CD8E2CC2AB /* LiquidGlassDash.entitlements */,
+		);
+		path = LiquidGlassDashApp;
+		sourceTree = "<group>";
+	};
+	105C673BDE2F4A729C9CE482 /* Sources */ = {
+		isa = PBXGroup;
+		children = (
+			AD0EA888F33E4F0EABA2D253 /* LiquidGlassDashApp.swift */,
+			3651BDB90D3748A691EFA7E1 /* DashboardView.swift */,
+			0F8E9734B9044834A43B4E96 /* DashboardViewModel.swift */,
+			CD9E6D0FD2104A88ACBC7EF0 /* Components.swift */,
+		);
+		path = Sources;
+		sourceTree = "<group>";
+	};
+	21DEB1DD035B43E682D8EABF /* Widgets */ = {
+		isa = PBXGroup;
+		children = (
+			6DA4C6243F954D9E8B0279C6 /* StatsWidget */,
+			29A32AAA6EA94A918D80601F /* DisplaysWidget */,
+		);
+		path = Widgets;
+		sourceTree = "<group>";
+	};
+	6DA4C6243F954D9E8B0279C6 /* StatsWidget */ = {
+		isa = PBXGroup;
+		children = (
+			B6ADFA87E1934CA79D36A0C0 /* StatsWidget.swift */,
+			7C6CAB22204C40A395693E4B /* StatsWidget.entitlements */,
+		);
+		path = StatsWidget;
+		sourceTree = "<group>";
+	};
+	29A32AAA6EA94A918D80601F /* DisplaysWidget */ = {
+		isa = PBXGroup;
+		children = (
+			3D0607895B434FDA8658BAF0 /* DisplaysWidget.swift */,
+			1FC31CDAA446494499AFCEFF /* DisplaysWidget.entitlements */,
+		);
+		path = DisplaysWidget;
+		sourceTree = "<group>";
+	};
+	DB6400ED40304B2CBF9CC3D2 /* SamplerAgent */ = {
+		isa = PBXGroup;
+		children = (
+			05FF728EE32B4FD3BA9CAE6B /* Sources */,
+			80CB758A19DF40A3B1C6FA37 /* SamplerAgent.entitlements */,
+		);
+		path = SamplerAgent;
+		sourceTree = "<group>";
+	};
+	05FF728EE32B4FD3BA9CAE6B /* Sources */ = {
+		isa = PBXGroup;
+		children = (
+			26F46A1B59EB469588DF533A /* SamplerAgentApp.swift */,
+		);
+		path = Sources;
+		sourceTree = "<group>";
+	};
+	1858C14B0B294EB7B320A6EE /* Shared */ = {
+		isa = PBXGroup;
+		children = (
+			8C14D7C4854C43B8B822A8D5 /* AppConstants.swift */,
+			DAFEABFE09A74C038B5A0607 /* AppIntents */,
+		);
+		path = Shared;
+		sourceTree = "<group>";
+	};
+	DAFEABFE09A74C038B5A0607 /* AppIntents */ = {
+		isa = PBXGroup;
+		children = (
+			10989D0F998348629A3C2016 /* StatsIntents.swift */,
+			31249F4C485B45F0A6F7D9EF /* DisplaysIntents.swift */,
+		);
+		path = AppIntents;
+		sourceTree = "<group>";
+	};
+	86E2623C25524113AD61C322 /* Tests */ = {
+		isa = PBXGroup;
+		children = (
+		);
+		path = Tests;
+		sourceTree = SOURCE_ROOT;
+	};
+	D0A5A0C8FBB5438FA2C91EBF /* Packages */ = {
+		isa = PBXGroup;
+		children = (
+		);
+		name = Packages;
+		sourceTree = "<group>";
+	};
+	E3970862100243209F22E672 /* Products */ = {
+		isa = PBXGroup;
+		children = (
+			3522344D044743CB89224B05 /* LiquidGlassDash.app */,
+			7538CAC822A94378A577EBF6 /* LiquidGlassDashStatsWidget.appex */,
+			AB9DA18EBB314271BF14D513 /* LiquidGlassDashDisplaysWidget.appex */,
+			86B912C0E0C14FA4850F76DA /* SamplerAgent.app */,
+		);
+		name = Products;
+		sourceTree = "<group>";
+	};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+	5B14BC4D45DB4984BD866DD0 /* LiquidGlassDash */ = {
+		isa = PBXNativeTarget;
+		buildConfigurationList = 3FE8E6E2A7D5443B8EADEA72 /* Build configuration list for PBXNativeTarget "LiquidGlassDash" */;
+		buildPhases = (
+			236A390EB95243EABBF0894E /* Sources */,
+			6CFA5970915D44878E93B079 /* Frameworks */,
+			A4EDB25276964C60B3479CBB /* Resources */,
+			A6CCB2CB49E54F9E83A6DBC7 /* Embed App Extensions */,
+			66E978B2E9844EA6BC4ADD27 /* Embed Login Items */,
+		);
+		buildRules = (
+		);
+		dependencies = (
+			6727FB38DA4F469093449DF1 /* PBXTargetDependency */,
+			54B8D392A6C54237847A16B5 /* PBXTargetDependency */,
+			80A57358A4CB4CFEB594653F /* PBXTargetDependency */,
+		);
+		name = LiquidGlassDash;
+		packageProductDependencies = (
+			3E9C7881710A4CFA8D593923 /* CoreStats */,
+			A80EDBB51A3D4C438399132F /* DisplaysKit */,
+			76E1DA2738E044AABB1F274D /* DesignSystem */,
+		);
+		productName = LiquidGlassDash;
+		productReference = 3522344D044743CB89224B05 /* LiquidGlassDash.app */;
+		productType = "com.apple.product-type.application";
+	};
+	B13285F45CBD479F9E9BDE58 /* LiquidGlassDashStatsWidget */ = {
+		isa = PBXNativeTarget;
+		buildConfigurationList = 69BC947F57874171AAB41A79 /* Build configuration list for PBXNativeTarget "LiquidGlassDashStatsWidget" */;
+		buildPhases = (
+			45B459B7DE1E4621ABAA001A /* Sources */,
+			7D37FEDD59C345E1A36D0E41 /* Frameworks */,
+			FD28C823A5A24CBA92AC8EF8 /* Resources */,
+		);
+		buildRules = (
+		);
+		dependencies = (
+		);
+		name = LiquidGlassDashStatsWidget;
+		packageProductDependencies = (
+			77D062098DC0481FBD283C88 /* CoreStats */,
+			BAEBC9C0DC354C64AD58BD8A /* DesignSystem */,
+		);
+		productName = LiquidGlassDashStatsWidget;
+		productReference = 7538CAC822A94378A577EBF6 /* LiquidGlassDashStatsWidget.appex */;
+		productType = "com.apple.product-type.app-extension";
+	};
+	B4C241C2750046E5A7E48E47 /* LiquidGlassDashDisplaysWidget */ = {
+		isa = PBXNativeTarget;
+		buildConfigurationList = 3BB09D1352D248F98879C2E5 /* Build configuration list for PBXNativeTarget "LiquidGlassDashDisplaysWidget" */;
+		buildPhases = (
+			67CD45BB18AD46EDB7D897BE /* Sources */,
+			2878F667CACC4A1B81B7D19A /* Frameworks */,
+			F9443402EE95401A8958D16D /* Resources */,
+		);
+		buildRules = (
+		);
+		dependencies = (
+		);
+		name = LiquidGlassDashDisplaysWidget;
+		packageProductDependencies = (
+			1AA11BD7A8244B969458D9FC /* DisplaysKit */,
+			8F65F1D7E37B4F7E9D8B99E5 /* DesignSystem */,
+		);
+		productName = LiquidGlassDashDisplaysWidget;
+		productReference = AB9DA18EBB314271BF14D513 /* LiquidGlassDashDisplaysWidget.appex */;
+		productType = "com.apple.product-type.app-extension";
+	};
+	B1662C794F1B44F9B6DE604E /* SamplerAgent */ = {
+		isa = PBXNativeTarget;
+		buildConfigurationList = 046A5E35AA2E421BA9B5235A /* Build configuration list for PBXNativeTarget "SamplerAgent" */;
+		buildPhases = (
+			E998774BBB9F4E5FABD4E1C8 /* Sources */,
+			40A0A1CA69BC4CC9B6BEA8E2 /* Frameworks */,
+			D75848AE783A408CAA3E812F /* Resources */,
+		);
+		buildRules = (
+		);
+		dependencies = (
+		);
+		name = SamplerAgent;
+		packageProductDependencies = (
+			F00767C963F84D2991AC50DC /* CoreStats */,
+			EA5A8AF7435742DA88ACED54 /* DisplaysKit */,
+		);
+		productName = SamplerAgent;
+		productReference = 86B912C0E0C14FA4850F76DA /* SamplerAgent.app */;
+		productType = "com.apple.product-type.application";
+	};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+	2FDB5EE302324480BA7E51BD /* Project object */ = {
+		isa = PBXProject;
+		attributes = {
+			BuildIndependentTargetsInParallel = 1;
+			LastSwiftUpdateCheck = 1620;
+			LastUpgradeCheck = 1620;
+			TargetAttributes = {
+				5B14BC4D45DB4984BD866DD0 = {
+					DevelopmentTeam = 5R8L3GTM7K;
+					ProvisioningStyle = Automatic;
+				};
+				B13285F45CBD479F9E9BDE58 = {
+					DevelopmentTeam = 5R8L3GTM7K;
+					ProvisioningStyle = Automatic;
+				};
+				B4C241C2750046E5A7E48E47 = {
+					DevelopmentTeam = 5R8L3GTM7K;
+					ProvisioningStyle = Automatic;
+				};
+				B1662C794F1B44F9B6DE604E = {
+					DevelopmentTeam = 5R8L3GTM7K;
+					ProvisioningStyle = Automatic;
+				};
+			};
+		};
+		buildConfigurationList = 121746CA8176410C87803C78 /* Build configuration list for PBXProject "LiquidGlassDash" */;
+		compatibilityVersion = "Xcode 16.0";
+		developmentRegion = en;
+		hasScannedForEncodings = 0;
+		knownRegions = (
+			en,
+			Base,
+		);
+		mainGroup = 6E1076C9DC80448C9D48AD91;
+		packageReferences = (
+			F3087B5C7F5B4A69B8E67417 /* Local Packages */,
+		);
+		productRefGroup = E3970862100243209F22E672 /* Products */;
+		projectDirPath = "";
+		projectRoot = "";
+		targets = (
+			5B14BC4D45DB4984BD866DD0 /* LiquidGlassDash */,
+			B13285F45CBD479F9E9BDE58 /* LiquidGlassDashStatsWidget */,
+			B4C241C2750046E5A7E48E47 /* LiquidGlassDashDisplaysWidget */,
+			B1662C794F1B44F9B6DE604E /* SamplerAgent */,
+		);
+	};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+	A4EDB25276964C60B3479CBB /* Resources */ = {
+		isa = PBXResourcesBuildPhase;
+		buildActionMask = 2147483647;
+		files = (
+		);
+		runOnlyForDeploymentPostprocessing = 0;
+	};
+	FD28C823A5A24CBA92AC8EF8 /* Resources */ = {
+		isa = PBXResourcesBuildPhase;
+		buildActionMask = 2147483647;
+		files = (
+		);
+		runOnlyForDeploymentPostprocessing = 0;
+	};
+	F9443402EE95401A8958D16D /* Resources */ = {
+		isa = PBXResourcesBuildPhase;
+		buildActionMask = 2147483647;
+		files = (
+		);
+		runOnlyForDeploymentPostprocessing = 0;
+	};
+	D75848AE783A408CAA3E812F /* Resources */ = {
+		isa = PBXResourcesBuildPhase;
+		buildActionMask = 2147483647;
+		files = (
+		);
+		runOnlyForDeploymentPostprocessing = 0;
+	};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+	236A390EB95243EABBF0894E /* Sources */ = {
+		isa = PBXSourcesBuildPhase;
+		buildActionMask = 2147483647;
+		files = (
+			129B60DE44B04677A7C8F76D /* LiquidGlassDashApp.swift in Sources */,
+			D69EE9C2D7CB4652BEAAD800 /* DashboardView.swift in Sources */,
+			E46DAE1C5B464626817ED6BF /* DashboardViewModel.swift in Sources */,
+			3744E632302649F6AC8542F8 /* Components.swift in Sources */,
+			CF1FBB4371904BF4BB38A3CB /* AppConstants.swift in Sources */,
+		);
+		runOnlyForDeploymentPostprocessing = 0;
+	};
+	45B459B7DE1E4621ABAA001A /* Sources */ = {
+		isa = PBXSourcesBuildPhase;
+		buildActionMask = 2147483647;
+		files = (
+			041CE3DA15DE4993A8F519C8 /* StatsWidget.swift in Sources */,
+			8CA2419E72DC41D387B5A4B9 /* AppConstants.swift in Sources */,
+			AAC99C3B0658436AA4A00BEC /* StatsIntents.swift in Sources */,
+		);
+		runOnlyForDeploymentPostprocessing = 0;
+	};
+	67CD45BB18AD46EDB7D897BE /* Sources */ = {
+		isa = PBXSourcesBuildPhase;
+		buildActionMask = 2147483647;
+		files = (
+			3171D4410F1C4409A34F5804 /* DisplaysWidget.swift in Sources */,
+			58332A2F461F48A69030C9F2 /* AppConstants.swift in Sources */,
+			AED36EAEB27847C9B0806B82 /* DisplaysIntents.swift in Sources */,
+		);
+		runOnlyForDeploymentPostprocessing = 0;
+	};
+	E998774BBB9F4E5FABD4E1C8 /* Sources */ = {
+		isa = PBXSourcesBuildPhase;
+		buildActionMask = 2147483647;
+		files = (
+			46E9FC419A8A46598633236E /* SamplerAgentApp.swift in Sources */,
+			6403EC8F16984ABEB8C50F00 /* AppConstants.swift in Sources */,
+		);
+		runOnlyForDeploymentPostprocessing = 0;
+	};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+	6727FB38DA4F469093449DF1 /* PBXTargetDependency */ = {
+		isa = PBXTargetDependency;
+		target = B13285F45CBD479F9E9BDE58 /* LiquidGlassDashStatsWidget */;
+		targetProxy = 3A4D3A1B1C7F42A0AF9E1DF8 /* PBXContainerItemProxy */;
+	};
+	54B8D392A6C54237847A16B5 /* PBXTargetDependency */ = {
+		isa = PBXTargetDependency;
+		target = B4C241C2750046E5A7E48E47 /* LiquidGlassDashDisplaysWidget */;
+		targetProxy = 1284A2E56C9A423EA72252B0 /* PBXContainerItemProxy */;
+	};
+	80A57358A4CB4CFEB594653F /* PBXTargetDependency */ = {
+		isa = PBXTargetDependency;
+		target = B1662C794F1B44F9B6DE604E /* SamplerAgent */;
+		targetProxy = 43128D99505F4984A9D9D005 /* PBXContainerItemProxy */;
+	};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+	4C50DD5DBAED466CBD8CEF2F /* Debug */ = {
+		isa = XCBuildConfiguration;
+		buildSettings = {
+			ALWAYS_SEARCH_USER_PATHS = NO;
+			CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+			CLANG_ENABLE_MODULES = YES;
+			CLANG_ENABLE_OBJC_ARC = YES;
+			CLANG_ENABLE_OBJC_WEAK = YES;
+			CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+			CLANG_WARN_BOOL_CONVERSION = YES;
+			CLANG_WARN_COMMA = YES;
+			CLANG_WARN_CONSTANT_CONVERSION = YES;
+			CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+			CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+			CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+			CLANG_WARN_EMPTY_BODY = YES;
+			CLANG_WARN_ENUM_CONVERSION = YES;
+			CLANG_WARN_INFINITE_RECURSION = YES;
+			CLANG_WARN_INT_CONVERSION = YES;
+			CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+			CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+			CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+			CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+			CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+			CLANG_WARN_STRICT_PROTOTYPES = YES;
+			CLANG_WARN_SUSPICIOUS_MOVE = YES;
+			CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+			CODE_SIGN_STYLE = Automatic;
+			COPY_PHASE_STRIP = NO;
+			DEAD_CODE_STRIPPING = YES;
+			DEBUG_INFORMATION_FORMAT = dwarf;
+			ENABLE_NS_ASSERTIONS = YES;
+			ENABLE_STRICT_OBJC_MSGSEND = YES;
+			ENABLE_TESTABILITY = YES;
+			GCC_C_LANGUAGE_STANDARD = gnu17;
+			GCC_DYNAMIC_NO_PIC = NO;
+			GCC_NO_COMMON_BLOCKS = YES;
+			GCC_OPTIMIZATION_LEVEL = 0;
+			GCC_PREPROCESSOR_DEFINITIONS = (
+				"DEBUG=1",
+				"$(inherited)",
+			);
+			GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+			GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+			GCC_WARN_UNDECLARED_SELECTOR = YES;
+			GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+			GCC_WARN_UNUSED_FUNCTION = YES;
+			GCC_WARN_UNUSED_VARIABLE = YES;
+			MACOSX_DEPLOYMENT_TARGET = 15.0;
+			MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+			ONLY_ACTIVE_ARCH = YES;
+			SDKROOT = macosx;
+		};
+		name = Debug;
+	};
+	BA76E7D651AF4605ADF7DB12 /* Release */ = {
+		isa = XCBuildConfiguration;
+		buildSettings = {
+			ALWAYS_SEARCH_USER_PATHS = NO;
+			CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+			CLANG_ENABLE_MODULES = YES;
+			CLANG_ENABLE_OBJC_ARC = YES;
+			CLANG_ENABLE_OBJC_WEAK = YES;
+			CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+			CLANG_WARN_BOOL_CONVERSION = YES;
+			CLANG_WARN_COMMA = YES;
+			CLANG_WARN_CONSTANT_CONVERSION = YES;
+			CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+			CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+			CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+			CLANG_WARN_EMPTY_BODY = YES;
+			CLANG_WARN_ENUM_CONVERSION = YES;
+			CLANG_WARN_INFINITE_RECURSION = YES;
+			CLANG_WARN_INT_CONVERSION = YES;
+			CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+			CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+			CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+			CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+			CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+			CLANG_WARN_STRICT_PROTOTYPES = YES;
+			CLANG_WARN_SUSPICIOUS_MOVE = YES;
+			CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+			CODE_SIGN_STYLE = Automatic;
+			COPY_PHASE_STRIP = NO;
+			DEAD_CODE_STRIPPING = YES;
+			DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+			ENABLE_NS_ASSERTIONS = NO;
+			ENABLE_STRICT_OBJC_MSGSEND = YES;
+			GCC_C_LANGUAGE_STANDARD = gnu17;
+			GCC_NO_COMMON_BLOCKS = YES;
+			GCC_OPTIMIZATION_LEVEL = s;
+			GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+			GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+			GCC_WARN_UNDECLARED_SELECTOR = YES;
+			GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+			GCC_WARN_UNUSED_FUNCTION = YES;
+			GCC_WARN_UNUSED_VARIABLE = YES;
+			MACOSX_DEPLOYMENT_TARGET = 15.0;
+			MTL_ENABLE_DEBUG_INFO = NO;
+			MTL_FAST_MATH = YES;
+			SDKROOT = macosx;
+		};
+		name = Release;
+	};
+	A0C19B16601B4622A6462F02 /* Debug */ = {
+		isa = XCBuildConfiguration;
+		buildSettings = {
+		CODE_SIGN_ENTITLEMENTS = LiquidGlassDashApp/LiquidGlassDash.entitlements;
+			CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 1;
+			DEVELOPMENT_TEAM = 5R8L3GTM7K;
+			ENABLE_HARDENED_RUNTIME = YES;
+			ENABLE_PREVIEWS = YES;
+			GENERATE_INFOPLIST_FILE = YES;
+			INFOPLIST_KEY_CFBundleDisplayName = "LiquidGlass Dash";
+			INFOPLIST_KEY_CFBundleIdentifier = com.glebporoshin.LiquidGlassDash;
+			INFOPLIST_KEY_CFBundleURLTypes = (
+				{
+					CFBundleURLName = LiquidGlassDash;
+					CFBundleURLSchemes = (
+						liquidglassdash,
+					);
+				},
+			);
+			INFOPLIST_KEY_LSBackgroundOnly = NO;
+			INFOPLIST_KEY_NSMainStoryboardFile = "";
+			LD_RUNPATH_SEARCH_PATHS = (
+				"$(inherited)",
+				"@executable_path/../Frameworks",
+			);
+			MACOSX_DEPLOYMENT_TARGET = 15.0;
+			MARKETING_VERSION = 1.0;
+			PRODUCT_BUNDLE_IDENTIFIER = com.glebporoshin.LiquidGlassDash;
+			PRODUCT_NAME = "$(TARGET_NAME)";
+			SUPPORTED_PLATFORMS = macosx;
+			SWIFT_EMIT_LOC_STRINGS = YES;
+			SWIFT_VERSION = 6.0;
+		};
+		name = Debug;
+	};
+	4C3458D8F5AD4AE5A2F9BDFD /* Release */ = {
+		isa = XCBuildConfiguration;
+		buildSettings = {
+		CODE_SIGN_ENTITLEMENTS = LiquidGlassDashApp/LiquidGlassDash.entitlements;
+			CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 1;
+			DEVELOPMENT_TEAM = 5R8L3GTM7K;
+			ENABLE_HARDENED_RUNTIME = YES;
+			ENABLE_PREVIEWS = YES;
+			GENERATE_INFOPLIST_FILE = YES;
+			INFOPLIST_KEY_CFBundleDisplayName = "LiquidGlass Dash";
+			INFOPLIST_KEY_CFBundleIdentifier = com.glebporoshin.LiquidGlassDash;
+			INFOPLIST_KEY_CFBundleURLTypes = (
+				{
+					CFBundleURLName = LiquidGlassDash;
+					CFBundleURLSchemes = (
+						liquidglassdash,
+					);
+				},
+			);
+			INFOPLIST_KEY_LSBackgroundOnly = NO;
+			INFOPLIST_KEY_NSMainStoryboardFile = "";
+			LD_RUNPATH_SEARCH_PATHS = (
+				"$(inherited)",
+				"@executable_path/../Frameworks",
+			);
+			MACOSX_DEPLOYMENT_TARGET = 15.0;
+			MARKETING_VERSION = 1.0;
+			PRODUCT_BUNDLE_IDENTIFIER = com.glebporoshin.LiquidGlassDash;
+			PRODUCT_NAME = "$(TARGET_NAME)";
+			SUPPORTED_PLATFORMS = macosx;
+			SWIFT_EMIT_LOC_STRINGS = YES;
+			SWIFT_VERSION = 6.0;
+		};
+		name = Release;
+	};
+	0124AF3B15F84B6DA556D648 /* Debug */ = {
+		isa = XCBuildConfiguration;
+		buildSettings = {
+			APPLICATION_EXTENSION_API_ONLY = YES;
+			CODE_SIGN_ENTITLEMENTS = Widgets/StatsWidget/StatsWidget.entitlements;
+			CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 1;
+			DEVELOPMENT_TEAM = 5R8L3GTM7K;
+			ENABLE_HARDENED_RUNTIME = YES;
+			GENERATE_INFOPLIST_FILE = YES;
+			INFOPLIST_KEY_CFBundleDisplayName = "LiquidGlass Stats";
+			INFOPLIST_KEY_CFBundleIdentifier = com.glebporoshin.LiquidGlassDash.statswidget;
+			INFOPLIST_KEY_NSExtension = {
+				NSExtensionAttributes = {
+					IntentsSupported = (
+						ConfigurationAppIntent,
+					);
+					WidgetFamily = (
+						"system-small",
+						"system-medium",
+						"system-large",
+					);
+				};
+				NSExtensionPointIdentifier = "com.apple.widgetkit-extension";
+				NSExtensionPrincipalClass = "";
+			};
+			LD_RUNPATH_SEARCH_PATHS = (
+				"$(inherited)",
+				"@executable_path/../Frameworks",
+			);
+			MACOSX_DEPLOYMENT_TARGET = 15.0;
+			MARKETING_VERSION = 1.0;
+			PRODUCT_BUNDLE_IDENTIFIER = com.glebporoshin.LiquidGlassDash.statswidget;
+			PRODUCT_NAME = LiquidGlassDashStatsWidget;
+			SKIP_INSTALL = YES;
+			SUPPORTED_PLATFORMS = macosx;
+			SWIFT_EMIT_LOC_STRINGS = YES;
+			SWIFT_VERSION = 6.0;
+		};
+		name = Debug;
+	};
+	FBBB7BD58E464E21AF91A8BE /* Release */ = {
+		isa = XCBuildConfiguration;
+		buildSettings = {
+			APPLICATION_EXTENSION_API_ONLY = YES;
+			CODE_SIGN_ENTITLEMENTS = Widgets/StatsWidget/StatsWidget.entitlements;
+			CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 1;
+			DEVELOPMENT_TEAM = 5R8L3GTM7K;
+			ENABLE_HARDENED_RUNTIME = YES;
+			GENERATE_INFOPLIST_FILE = YES;
+			INFOPLIST_KEY_CFBundleDisplayName = "LiquidGlass Stats";
+			INFOPLIST_KEY_CFBundleIdentifier = com.glebporoshin.LiquidGlassDash.statswidget;
+			INFOPLIST_KEY_NSExtension = {
+				NSExtensionAttributes = {
+					IntentsSupported = (
+						ConfigurationAppIntent,
+					);
+					WidgetFamily = (
+						"system-small",
+						"system-medium",
+						"system-large",
+					);
+				};
+				NSExtensionPointIdentifier = "com.apple.widgetkit-extension";
+				NSExtensionPrincipalClass = "";
+			};
+			LD_RUNPATH_SEARCH_PATHS = (
+				"$(inherited)",
+				"@executable_path/../Frameworks",
+			);
+			MACOSX_DEPLOYMENT_TARGET = 15.0;
+			MARKETING_VERSION = 1.0;
+			PRODUCT_BUNDLE_IDENTIFIER = com.glebporoshin.LiquidGlassDash.statswidget;
+			PRODUCT_NAME = LiquidGlassDashStatsWidget;
+			SKIP_INSTALL = YES;
+			SUPPORTED_PLATFORMS = macosx;
+			SWIFT_EMIT_LOC_STRINGS = YES;
+			SWIFT_VERSION = 6.0;
+		};
+		name = Release;
+	};
+	9D5956F716C544BD8620CE08 /* Debug */ = {
+		isa = XCBuildConfiguration;
+		buildSettings = {
+			APPLICATION_EXTENSION_API_ONLY = YES;
+			CODE_SIGN_ENTITLEMENTS = Widgets/DisplaysWidget/DisplaysWidget.entitlements;
+			CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 1;
+			DEVELOPMENT_TEAM = 5R8L3GTM7K;
+			ENABLE_HARDENED_RUNTIME = YES;
+			GENERATE_INFOPLIST_FILE = YES;
+			INFOPLIST_KEY_CFBundleDisplayName = "LiquidGlass Displays";
+			INFOPLIST_KEY_CFBundleIdentifier = com.glebporoshin.LiquidGlassDash.displayswidget;
+			INFOPLIST_KEY_NSExtension = {
+				NSExtensionAttributes = {
+					IntentsSupported = (
+						DisplayConfigurationIntent,
+					);
+					WidgetFamily = (
+						"system-medium",
+						"system-large",
+					);
+				};
+				NSExtensionPointIdentifier = "com.apple.widgetkit-extension";
+				NSExtensionPrincipalClass = "";
+			};
+			LD_RUNPATH_SEARCH_PATHS = (
+				"$(inherited)",
+				"@executable_path/../Frameworks",
+			);
+			MACOSX_DEPLOYMENT_TARGET = 15.0;
+			MARKETING_VERSION = 1.0;
+			PRODUCT_BUNDLE_IDENTIFIER = com.glebporoshin.LiquidGlassDash.displayswidget;
+			PRODUCT_NAME = LiquidGlassDashDisplaysWidget;
+			SKIP_INSTALL = YES;
+			SUPPORTED_PLATFORMS = macosx;
+			SWIFT_EMIT_LOC_STRINGS = YES;
+			SWIFT_VERSION = 6.0;
+		};
+		name = Debug;
+	};
+	C856507012D442E69F6CFD13 /* Release */ = {
+		isa = XCBuildConfiguration;
+		buildSettings = {
+			APPLICATION_EXTENSION_API_ONLY = YES;
+			CODE_SIGN_ENTITLEMENTS = Widgets/DisplaysWidget/DisplaysWidget.entitlements;
+			CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 1;
+			DEVELOPMENT_TEAM = 5R8L3GTM7K;
+			ENABLE_HARDENED_RUNTIME = YES;
+			GENERATE_INFOPLIST_FILE = YES;
+			INFOPLIST_KEY_CFBundleDisplayName = "LiquidGlass Displays";
+			INFOPLIST_KEY_CFBundleIdentifier = com.glebporoshin.LiquidGlassDash.displayswidget;
+			INFOPLIST_KEY_NSExtension = {
+				NSExtensionAttributes = {
+					IntentsSupported = (
+						DisplayConfigurationIntent,
+					);
+					WidgetFamily = (
+						"system-medium",
+						"system-large",
+					);
+				};
+				NSExtensionPointIdentifier = "com.apple.widgetkit-extension";
+				NSExtensionPrincipalClass = "";
+			};
+			LD_RUNPATH_SEARCH_PATHS = (
+				"$(inherited)",
+				"@executable_path/../Frameworks",
+			);
+			MACOSX_DEPLOYMENT_TARGET = 15.0;
+			MARKETING_VERSION = 1.0;
+			PRODUCT_BUNDLE_IDENTIFIER = com.glebporoshin.LiquidGlassDash.displayswidget;
+			PRODUCT_NAME = LiquidGlassDashDisplaysWidget;
+			SKIP_INSTALL = YES;
+			SUPPORTED_PLATFORMS = macosx;
+			SWIFT_EMIT_LOC_STRINGS = YES;
+			SWIFT_VERSION = 6.0;
+		};
+		name = Release;
+	};
+	0B32AC806A994465AB383268 /* Debug */ = {
+		isa = XCBuildConfiguration;
+		buildSettings = {
+			CODE_SIGN_ENTITLEMENTS = SamplerAgent/SamplerAgent.entitlements;
+			CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 1;
+			DEVELOPMENT_TEAM = 5R8L3GTM7K;
+			ENABLE_HARDENED_RUNTIME = YES;
+			GENERATE_INFOPLIST_FILE = YES;
+			INFOPLIST_KEY_CFBundleDisplayName = "Sampler Agent";
+			INFOPLIST_KEY_CFBundleIdentifier = com.glebporoshin.LiquidGlassDash.SamplerAgent;
+			INFOPLIST_KEY_LSBackgroundOnly = YES;
+			INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+			INFOPLIST_KEY_NSUIElement = YES;
+			LD_RUNPATH_SEARCH_PATHS = (
+				"$(inherited)",
+				"@executable_path/../Frameworks",
+			);
+			MACOSX_DEPLOYMENT_TARGET = 15.0;
+			MARKETING_VERSION = 1.0;
+			PRODUCT_BUNDLE_IDENTIFIER = com.glebporoshin.LiquidGlassDash.SamplerAgent;
+			PRODUCT_NAME = "$(TARGET_NAME)";
+			SUPPORTED_PLATFORMS = macosx;
+			SWIFT_EMIT_LOC_STRINGS = YES;
+			SWIFT_VERSION = 6.0;
+		};
+		name = Debug;
+	};
+	3DF46739FB2145C781F9AEE1 /* Release */ = {
+		isa = XCBuildConfiguration;
+		buildSettings = {
+			CODE_SIGN_ENTITLEMENTS = SamplerAgent/SamplerAgent.entitlements;
+			CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 1;
+			DEVELOPMENT_TEAM = 5R8L3GTM7K;
+			ENABLE_HARDENED_RUNTIME = YES;
+			GENERATE_INFOPLIST_FILE = YES;
+			INFOPLIST_KEY_CFBundleDisplayName = "Sampler Agent";
+			INFOPLIST_KEY_CFBundleIdentifier = com.glebporoshin.LiquidGlassDash.SamplerAgent;
+			INFOPLIST_KEY_LSBackgroundOnly = YES;
+			INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+			INFOPLIST_KEY_NSUIElement = YES;
+			LD_RUNPATH_SEARCH_PATHS = (
+				"$(inherited)",
+				"@executable_path/../Frameworks",
+			);
+			MACOSX_DEPLOYMENT_TARGET = 15.0;
+			MARKETING_VERSION = 1.0;
+			PRODUCT_BUNDLE_IDENTIFIER = com.glebporoshin.LiquidGlassDash.SamplerAgent;
+			PRODUCT_NAME = "$(TARGET_NAME)";
+			SUPPORTED_PLATFORMS = macosx;
+			SWIFT_EMIT_LOC_STRINGS = YES;
+			SWIFT_VERSION = 6.0;
+		};
+		name = Release;
+	};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+	121746CA8176410C87803C78 /* Build configuration list for PBXProject "LiquidGlassDash" */ = {
+		isa = XCConfigurationList;
+		buildConfigurations = (
+			4C50DD5DBAED466CBD8CEF2F /* Debug */,
+			BA76E7D651AF4605ADF7DB12 /* Release */,
+		);
+		defaultConfigurationIsVisible = 0;
+		defaultConfigurationName = Release;
+	};
+	3FE8E6E2A7D5443B8EADEA72 /* Build configuration list for PBXNativeTarget "LiquidGlassDash" */ = {
+		isa = XCConfigurationList;
+		buildConfigurations = (
+			A0C19B16601B4622A6462F02 /* Debug */,
+			4C3458D8F5AD4AE5A2F9BDFD /* Release */,
+		);
+		defaultConfigurationIsVisible = 0;
+		defaultConfigurationName = Release;
+	};
+	69BC947F57874171AAB41A79 /* Build configuration list for PBXNativeTarget "LiquidGlassDashStatsWidget" */ = {
+		isa = XCConfigurationList;
+		buildConfigurations = (
+			0124AF3B15F84B6DA556D648 /* Debug */,
+			FBBB7BD58E464E21AF91A8BE /* Release */,
+		);
+		defaultConfigurationIsVisible = 0;
+		defaultConfigurationName = Release;
+	};
+	3BB09D1352D248F98879C2E5 /* Build configuration list for PBXNativeTarget "LiquidGlassDashDisplaysWidget" */ = {
+		isa = XCConfigurationList;
+		buildConfigurations = (
+			9D5956F716C544BD8620CE08 /* Debug */,
+			C856507012D442E69F6CFD13 /* Release */,
+		);
+		defaultConfigurationIsVisible = 0;
+		defaultConfigurationName = Release;
+	};
+	046A5E35AA2E421BA9B5235A /* Build configuration list for PBXNativeTarget "SamplerAgent" */ = {
+		isa = XCConfigurationList;
+		buildConfigurations = (
+			0B32AC806A994465AB383268 /* Debug */,
+			3DF46739FB2145C781F9AEE1 /* Release */,
+		);
+		defaultConfigurationIsVisible = 0;
+		defaultConfigurationName = Release;
+	};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+	F3087B5C7F5B4A69B8E67417 /* Local Packages */ = {isa = XCLocalSwiftPackageReference; relativePath = .; };
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+	3E9C7881710A4CFA8D593923 /* CoreStats */ = {isa = XCSwiftPackageProductDependency; package = F3087B5C7F5B4A69B8E67417 /* Local Packages */; productName = CoreStats; };
+	A80EDBB51A3D4C438399132F /* DisplaysKit */ = {isa = XCSwiftPackageProductDependency; package = F3087B5C7F5B4A69B8E67417 /* Local Packages */; productName = DisplaysKit; };
+	76E1DA2738E044AABB1F274D /* DesignSystem */ = {isa = XCSwiftPackageProductDependency; package = F3087B5C7F5B4A69B8E67417 /* Local Packages */; productName = DesignSystem; };
+	77D062098DC0481FBD283C88 /* CoreStats */ = {isa = XCSwiftPackageProductDependency; package = F3087B5C7F5B4A69B8E67417 /* Local Packages */; productName = CoreStats; };
+	BAEBC9C0DC354C64AD58BD8A /* DesignSystem */ = {isa = XCSwiftPackageProductDependency; package = F3087B5C7F5B4A69B8E67417 /* Local Packages */; productName = DesignSystem; };
+	1AA11BD7A8244B969458D9FC /* DisplaysKit */ = {isa = XCSwiftPackageProductDependency; package = F3087B5C7F5B4A69B8E67417 /* Local Packages */; productName = DisplaysKit; };
+	8F65F1D7E37B4F7E9D8B99E5 /* DesignSystem */ = {isa = XCSwiftPackageProductDependency; package = F3087B5C7F5B4A69B8E67417 /* Local Packages */; productName = DesignSystem; };
+	F00767C963F84D2991AC50DC /* CoreStats */ = {isa = XCSwiftPackageProductDependency; package = F3087B5C7F5B4A69B8E67417 /* Local Packages */; productName = CoreStats; };
+	EA5A8AF7435742DA88ACED54 /* DisplaysKit */ = {isa = XCSwiftPackageProductDependency; package = F3087B5C7F5B4A69B8E67417 /* Local Packages */; productName = DisplaysKit; };
+/* End XCSwiftPackageProductDependency section */
+
+	};
+	rootObject = 2FDB5EE302324480BA7E51BD /* Project object */;
+}
